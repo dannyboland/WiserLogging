@@ -1,0 +1,10 @@
+version: "3"
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "80:3000"
+  db:
+    image: petergrace/opentsdb-docker
+    ports:
+      - "4242:4242"
